@@ -43,7 +43,7 @@ jumper wires. I ran the GND from the Arduino to the GND rail on the breadboard. 
 20. The GND jumper wires are: column 53 to GND rail. Column 43 to GND rail. Column 33 to 
 GND rail. Column 23 to GND rail. Column 23 to GND rail. The circuit is now wired up.
 
-.Thumbnail 2
+.Thumbnail
 image:https://github.com/TechRancher/Simple_4_Button_Panio/blob/main/circuitLayout.png[
 "KiCad Schematic",
 link="https://github.com/TechRancher/Simple_4_Button_Panio/blob/main/circuitLayout.png"]

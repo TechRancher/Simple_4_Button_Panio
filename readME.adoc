@@ -1,0 +1,68 @@
+== Making A Simple 4 Button Panio
+
+:Project: Simple 4 Button Panio
+:Author: Jason Sikes
+:AKA: TechRancher
+:Email: https://id.arduino.cc/sikesjay
+:Date: August 05, 2023
+:Revision: 1
+
+Title of this project is: {project}
+
+Author is {author}
+
+Also known as: {aka}
+
+Written on: {date}
+
+Version: {revision}
+
+.Description of the project
+This is a simple 4 button panio. The buzzer is going to buzz the tones of C, D, E,
+and G. I will be using the builtin Library tone(). tone(pin, frequency, duration).
+I wrote a function to turn on the on board LED (Pin 13) to show that the button
+is pressed. This will help with debugging. The frequencies I used are: C = 440Hz,
+D = 493.883Hz, E = 554.365Hz, and G = 659.255Hz. Doe, Re, Mi, and Sol.  
+
+.Items Needed
+* Four Push button
+* One Arduino R3 
+* One Breadboard
+* Eleven jumper wires
+
+.Circuit Design
+On the breadboard I installed the four push buttons at the bottom of my breadboard. With
+the rows listed as F, G, H, I, and J. Here are the columns I installed the buttons:
+Button C - left two legs into column 55, right legs into column 53. Button D - left two
+legs into column 45, right legs into column 43. Button E - left two legs into column 35,
+right legs into column 33. Button G - left two legs into column 25, right legs into 
+column 23. The passive buzzer positive leg is installed into column 20 on the upper rows
+of the breadboard - rows A, B, C, D, and E. With the GND leg into column 23. Now for the 
+jumper wires. I ran the GND from the Arduino to the GND rail on the breadboard. I ran pin
+2 to column 55. Pin 3 to column 45. Pin 4 to column 35. Pin 5 to column 25. Pin 9 to column
+20. The GND jumper wires are: column 53 to GND rail. Column 43 to GND rail. Column 33 to 
+GND rail. Column 23 to GND rail. Column 23 to GND rail. The circuit is now wired up.
+
+.Thumbnail 2
+image:file:///home/jay/Arduino/SmallProjects/SimplePanio/circuitLayout.png[
+"KiCad Schematic",
+link="file:///home/jay/Arduino/SmallProjects/SimplePanio/circuitLayout.png"]
+
+
+.Code
+The code for this project is in the file called "SimplePanio.ino".
+
+.What To Expect
+This project will take the button reading and tell the IC to play a frequency based off
+the button Value. The function of tone() does the heavy lifting in this project. You can
+learn more about tone usage at 
+<https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/>
+
+.Licensing Of Code
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+
+.Contact Me
+If you have any questions feel free to contact me at: {email}
